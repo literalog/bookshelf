@@ -4,5 +4,6 @@ go 1.21.5
 
 require (
 	github.com/google/uuid v1.5.0
-	go.mongodb.org/mongo-driver v1.13.1
+	github.com/gorilla/mux v1.8.1
+	github.com/literalog/cerrors v0.0.0-20240103162425-a0980901f0bb
 )

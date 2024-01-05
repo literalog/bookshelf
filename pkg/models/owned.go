@@ -13,8 +13,8 @@ type OwnedRequest struct {
 	BookId string `json:"book_id" bson:"book_id"`
 }
 
-func NewOwned(req OwnedRequest) Owned {
-	return Owned{
+func NewOwned(req OwnedRequest) *Owned {
+	return &Owned{
 		Id:     uuid.NewString(),
 		UserId: req.UserId,
 		BookId: req.BookId,

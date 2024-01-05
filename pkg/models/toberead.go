@@ -18,8 +18,8 @@ type ToBeReadRequest struct {
 	BookId string `json:"book_id" bson:"book_id"`
 }
 
-func NewToBeRead(req ToBeReadRequest) ToBeRead {
-	return ToBeRead{
+func NewToBeRead(req ToBeReadRequest) *ToBeRead {
+	return &ToBeRead{
 		Id:        uuid.NewString(),
 		UserId:    req.UserId,
 		BookId:    req.BookId,
